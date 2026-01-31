@@ -29,7 +29,7 @@ with st.sidebar:
             st.error(f"失败: {e}")
     selected_model = st.selectbox("选择模型 (演示建议 Flash)", st.session_state.get('models', []))
 
-st.title("🎬 全模态视频重构 - 丝滑衔接版")
+st.title("🎬 全模态视频拆解Agent")
 st.caption("集成：语义转文字 + 骨架运动追踪 + 镜头连贯性锚点")
 
 col_l, col_r = st.columns(2)
@@ -103,7 +103,7 @@ with col_r:
 
 # --- 演示给客户看的关键点 ---
 st.markdown("---")
-st.markdown("### 💡 客户演示话术 (技术核心)")
+st.markdown("### 💡产品核心")
 st.write("1. **动作惯性 (Motion Logic):** 我们的系统会记录前一秒的结束手势，强制下一秒从该位置开始，解决 AI 视频常见的‘跳帧’问题。")
 st.write("2. **语音同步 (Transcript):** 自动提取博主情绪，为后续口型对齐 (Lip-sync) 提供精准参数。")
 st.write("3. **欧美化重塑:** 在保持原视频产品（衣服、器材）不变的前提下，像素级重构人种与环境。")
